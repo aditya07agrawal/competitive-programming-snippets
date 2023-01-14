@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+for(const auto& v: ${1:Ans}){
+	for(auto x: v)
+		cout << x << " ";
+	cout << endl;
+}
+]]></content>
+	<tabTrigger>mat_out</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

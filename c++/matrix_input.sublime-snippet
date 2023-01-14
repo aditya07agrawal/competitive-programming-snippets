@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+vv${1:i} ${2:A}(${3:n}, v${4:i}(${5:m}));
+for(auto& v: $2)
+	for(auto& x: v)
+		cin >> x;
+$0
+]]></content>
+	<tabTrigger>mat_inp</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

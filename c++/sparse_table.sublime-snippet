@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+vector<v${2:i}> M$3(${1:n}, v$2(${4:20}, 0));
+for(int i = 0; i < $1; i++)
+	M$3[i][0] = ${3:A}[i];
+for(int j = 1; j < $4; j++)
+	for(int i = 0; i < $1; i++){
+		int h = i + (1 << (j-1)); h = min(h, $1-1);
+		M$3[i][j] = ${5:max}(M$3[i][j-1], M$3[h][j-1]);
+	}
+$0
+]]></content>
+	<tabTrigger>sparsetable</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

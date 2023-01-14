@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+auto solve = [&](){
+	$0
+};
+
+if(solve())
+	cout << "YES" << endl;
+else
+	cout << "NO" << endl;
+]]></content>
+	<tabTrigger>soln_bool</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

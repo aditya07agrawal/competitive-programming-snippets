@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+${2:cout << $1.size() << endl;
+}for(auto x: ${1:Ans})
+	cout << x << " ";
+cout << endl;
+]]></content>
+	<tabTrigger>vec_out</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>
