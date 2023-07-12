@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+class Node{
+public:
+	vector<Node*> Children;
+	Node* parent;
+
+	void DFS(){
+		for(auto v: this->Children){
+			v->DFS();
+		}
+	}
+};
+]]></content>
+	<tabTrigger>TreeNode</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

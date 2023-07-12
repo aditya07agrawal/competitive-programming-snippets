@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+queue<int> Q;
+while(!Q.empty()){
+	int u = Q.front(); Q.pop();
+	for(auto v: Adj[u])
+		if(!Vis[v]){
+			Vis[v] = true;
+			Q.push(v);
+		}
+}
+]]></content>
+	<tabTrigger>bfs</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

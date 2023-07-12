@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+vector<long long> invF(N); invF[0] = 1;
+for(int i = 1; i < N; i++)
+	invF[i] = (inv[i] * invF[i-1]) % mod;
+]]></content>
+	<tabTrigger>inv_fact_vec</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

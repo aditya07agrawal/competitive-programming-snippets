@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+vector<long long> F(N); F[0] = 1;
+for(int i = 1; i < N; i++)
+	F[i] = (i * F[i-1]) % mod;
+]]></content>
+	<tabTrigger>fact_vec</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>
